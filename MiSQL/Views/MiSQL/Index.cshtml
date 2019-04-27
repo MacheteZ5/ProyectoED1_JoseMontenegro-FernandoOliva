@@ -1,0 +1,20 @@
+﻿@using MiSQL.Models;
+@model IEnumerable<Diccionario>
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<body>
+
+    @using (Html.BeginForm("Index", "MiSQL", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        <input type="file" name="postedFile" />
+        <input type="submit" value="Importar (Mostrar archivo)" />
+    }
+</body>
+</html>
+<br />
+<form action="MiSQL/Menú" method="post">
+    <input type="submit" name="enviar" value="Dirigirse al Menú" />
+</form>

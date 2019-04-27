@@ -16,7 +16,7 @@ namespace MiSQL
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "MiSQL", action = "Index", id = UrlParameter.Optional }
             );
         }
     }
