@@ -1,0 +1,86 @@
+﻿@model IEnumerable<MiSQL.Models.Información>
+
+@{
+    ViewBag.Title = "InserciónDeDatos";
+}
+
+<h2>InserciónDeDatos</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.num)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.varchar)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tiempo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.num2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.varchar2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tiempo2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.num3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.varchar3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tiempo3)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.num)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.varchar)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tiempo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.num2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.varchar2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tiempo2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.num3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.varchar3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tiempo3)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>
+<br />
+<br />
+<form action="Menú" method="post">
+    <input type="submit" name="enviar" value="Retornar al Menú" />
+</form>
