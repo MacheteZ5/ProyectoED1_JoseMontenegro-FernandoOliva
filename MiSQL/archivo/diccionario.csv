@@ -1,10 +1,9 @@
 Claves;Valores
-Select;Select
-From;From
-Delete;Delete
-Where;Where
+SELECT;SELECT
+FROM;FROM
+DELETE;DELETE
+WHERE;WHERE
 CREATE;CREATE
-Drop Table;Drop Table
-Insert Into;Insert Into
-Values;Values
-Go;Go
+DROP;DROP
+INSERT INTO;INSERT INTO
+VALUES;VALUES
